@@ -4,11 +4,13 @@ declare module 'react-native-nordic-dfu' {
       deviceAddress,
       deviceName,
       filePath,
+      options,
       alternativeAdvertisingNameEnabled
     }: {
       deviceAddress: string;
       deviceName?: string;
       filePath: string | null;
+      options?: {};
       alternativeAdvertisingNameEnabled?: boolean;
     }): Promise<string>;
   }
