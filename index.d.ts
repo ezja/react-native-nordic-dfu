@@ -12,6 +12,7 @@ declare module "react-native-nordic-dfu" {
       deviceAddress: string;
       deviceName?: string;
       filePath: string | null;
+      options?: { retries?: number, mtu?: number };
       alternativeAdvertisingNameEnabled?: boolean;
       packetReceiptNotificationParameter?: number;
       retries?: number;
